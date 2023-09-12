@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morada</title>
+    <style>
+        h1{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Morada</h1>
+    Qual a sua morada: <input type="text" name="textm1" id="textm1">
+    <input type="button" value="verificar" onclick="saber()">
+    <div id="res">Resultado</div>
+    <script>
+        function saber(){
+            var txtm1 = window.document.getElementById('txtm1')
+            var res = window.document.getElementById('res')
+            if (txtm1 != "Cabo Verde"){
+                res.innerHTML = `Você é estrangeiro`
+            }else{
+                res.innerHTML = `Você é Cabo Verdiano`
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

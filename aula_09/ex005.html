@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passoa com DOM</title>
+    <style>
+        body{
+            background-color:rgb(189, 219, 209);
+            color: aliceblue;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando o estido com DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar <strong>DOM </strong> em javascript</p>
+    <div id="msg">Clique em min</div>
+    <div name="msg"> Adilson Mendes Silva</div>
+    <div class="morada"> Rua São João de Brito</div>
+
+    <script>
+        /*
+        No selector
+        quando estamos a utilizar o "div" usamos o "#" ex: linha 55
+        quando estamos a utilizar a "class" usamos 0 "."
+        */
+
+
+        // selecionar por marca
+        var p1 = window.document.getElementsByTagName("P")[1]
+        //window.alert(p1.innerText) // innerText - escrever o que tem dentro  - immerHTML - ESCREVER TUDO IGUALZINHO
+        window.document.write("Está escrito assim: " + p1.innerText)
+
+        //selecionar por ID
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Estou aguardando' // alterar a nossa variavel d
+        window.document.getElementById('msg').innerText = 'Olá' // a forma completa de alterar a nossa variavel
+
+        // selecionar por nome
+        var k = window.document.getElementsByName('msg')[0]
+        k.style.backgroundColor = 'red'
+        k.innerText = 'vy'
+
+        // selecionar por class
+        var mor = window.document.getElementsByClassName('morada')[0]
+        mor.style.backgroundColor = 'black'
+        mor.innerText = 'Rua issan Sartawi LT4 4 Esq'
+
+        // selecionar por seletor "querySeletor()" ou "querySelectorAll()"
+        var a = window.document.querySelector('div#msg')
+        a.style.color = 'black'
+        a.style.backgroundColor = 'yellow'
+        a.innerText = 'Vy de Antónia k Quintino'
+
+
+    </script>
+</body>
+</html>

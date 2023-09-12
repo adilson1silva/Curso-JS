@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(136, 136, 240);
+    font:  normal 15pt arial;
+}   
+
+header{
+    color:  white;
+    text-align: center;
+
+
+}
+
+section{
+    background-color: white; /* trabalhar o back ground*/
+    border-radius: 10px; /* trabalhar a borda*/
+    padding: 15px; /*aumentar a borda*/
+    width: 500px; /*largura*/;
+    margin: auto; /*centralizar*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.886);/*Fazar sombra no fondo da imagem*/
+
+}
+
+select#flista{
+    width: 150px;
+}
+
+footer{
+    color:  white;
+    text-align: center;
+    font-style: italic;
+
+
+}
